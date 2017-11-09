@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    image: elasticsearch
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    restart: always
+
+  kibana:
+    container_name: kibana
+    image: kibana
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    restart: always

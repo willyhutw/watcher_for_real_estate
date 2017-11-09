@@ -1,0 +1,55 @@
+{
+  "template": "real_estate",
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas" : 0
+  },
+  "mappings": {
+    "A": {
+      "_all": { "enabled": false },
+      "properties": {
+        "交易年月日": { "type": "date" },
+        "建築完成年月": { "type": "date" },
+        "單價每平方公尺": { "type": "long" },
+        "建物現況格局-廳": { "type": "byte" },
+        "建物現況格局-房": { "type": "byte" },
+        "建物現況格局-衛": { "type": "byte" },
+        "土地移轉總面積平方公尺": { "type": "double" },
+        "建物移轉總面積平方公尺": { "type": "double" },
+        "車位移轉總面積平方公尺": { "type": "double" },
+        "車位總價元": { "type": "long" },
+        "總價元": { "type": "long" }
+      }
+    },
+    "B": {
+      "_all": { "enabled": false },
+      "properties": {
+        "交易年月日": { "type": "date" },
+        "建築完成年月": { "type": "date" },
+        "單價每平方公尺": { "type": "long" },
+        "建物現況格局-廳": { "type": "byte" },
+        "建物現況格局-房": { "type": "byte" },
+        "建物現況格局-衛": { "type": "byte" },
+        "土地移轉總面積平方公尺": { "type": "double" },
+        "建物移轉總面積平方公尺": { "type": "double" },
+        "車位移轉總面積平方公尺": { "type": "double" },
+        "車位總價元": { "type": "long" },
+        "總價元": { "type": "long" }
+      }
+    },
+    "C": {
+      "_all": { "enabled": false },
+      "properties": {
+        "租賃年月日": { "type": "date" },
+        "建築完成年月": { "type": "date" },
+        "單價每平方公尺": { "type": "long" },
+        "建物現況格局-廳": { "type": "byte" },
+        "建物現況格局-房": { "type": "byte" },
+        "建物現況格局-衛": { "type": "byte" },
+        "租賃總面積平方公尺": { "type": "double" },
+        "租金總額元": { "type": "long" },
+        "總額元": { "type": "long" }
+      }
+    }
+  }
+}
